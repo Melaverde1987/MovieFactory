@@ -1,0 +1,69 @@
+let movies = `
+  [
+    {
+      "id": 1,
+      "movieName": "What's Eating Gilbert Grape",
+      "image": "img/1.jpg",
+      "description": "odio odio elementum eu interdum eu tincidunt in leo maecenas pulvinar lobortis est phasellus",
+      "likes": 57,
+      "genre": "Drama",
+      "language": "English",
+      "land": "USA"
+    }, 
+    
+    {
+      "id": 2,
+      "movieName": "Remember Sunday",
+      "image": "img/2.jpg",
+      "description": "quam turpis adipiscing lorem vitae mattis nibh ligula nec",
+      "likes": 30,
+      "genre": "Drama|Romance",
+      "language": "German",
+      "land": "Germany"
+    }, 
+    
+    {
+      "id": 3,
+      "movieName": "Dirty",
+      "image": "img/3.png",
+      "description": "suscipit a feugiat et eros vestibulum ac",
+      "likes": 50,
+      "genre": "Crime|Drama|Thriller",
+      "language": "English",
+      "land": "India"
+    },
+
+    {
+      "id": 4,
+      "movieName": "Sympathy for Mr. Vengeance",
+      "image": "img/4.jpg",
+      "description": "vivamus vel nulla eget eros elementum pellentesque quisque",
+      "likes": 90,
+      "genre": "Crime|Drama",
+      "language": "english",
+      "land": "USA"
+    },
+
+    {
+      "id": 5,
+      "movieName": "Black Plague",
+      "image": "img/5.jpg",
+      "description": "curabitur convallis duis consequat dui nec nisi volutpat eleifend",
+      "likes": 10,
+      "genre": "Drama|Mystery|Thriller",
+      "language": "french",
+      "land": "France"
+    },
+
+    {
+      "id": 6,
+      "movieName": "Notti bianche, Le (White Nights)",
+      "image": "img/6.jpg",
+      "description": "lectus in quam fringilla rhoncus mauris",
+      "likes": 88,
+      "genre": "Drama|Romance",
+      "language": "italian",
+      "land": "Italy"
+    }
+  ]
+`

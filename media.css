@@ -1,0 +1,23 @@
+@media only screen and (max-width : 550px) {
+    header {
+        font-size: 2rem;
+    }
+
+    nav a {
+        font-size: 1.5rem;
+    }
+    
+    main .row .box {
+        display: block;
+        max-height: 100%;
+    }
+
+    main .row .box .image {
+        width: 100%;
+    }
+
+    main .row .box .text {
+        width: 100%;
+    }
+
+}
