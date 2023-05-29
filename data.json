@@ -2,68 +2,167 @@ let movies = `
   [
     {
       "id": 1,
-      "movieName": "What's Eating Gilbert Grape",
+      "movieName": "She",
       "image": "img/1.jpg",
-      "description": "odio odio elementum eu interdum eu tincidunt in leo maecenas pulvinar lobortis est phasellus",
-      "likes": 57,
+      "description": "Odio odio elementum eu interdum eu tincidunt in leo maecenas pulvinar lobortis est phasellus",
+      "likes": 14,
       "genre": "Drama",
       "language": "English",
       "land": "USA"
     }, 
-    
+
     {
       "id": 2,
-      "movieName": "Remember Sunday",
-      "image": "img/2.jpg",
-      "description": "quam turpis adipiscing lorem vitae mattis nibh ligula nec",
-      "likes": 30,
-      "genre": "Drama|Romance",
-      "language": "German",
-      "land": "Germany"
-    }, 
+      "movieName": "Lion",
+      "image": "img/14.jpg",
+      "description": "Montes nascetur ridiculus mus vivamus vestibulum sagittis sapien cum sociis natoque penatibus",
+      "likes": 15,
+      "genre": "Mystery",
+      "language": "English",
+      "land": "Italy"
+    },
     
     {
       "id": 3,
-      "movieName": "Dirty",
-      "image": "img/3.png",
-      "description": "suscipit a feugiat et eros vestibulum ac",
-      "likes": 50,
-      "genre": "Crime|Drama|Thriller",
+      "movieName": "The lost Girl",
+      "image": "img/3.jpg",
+      "description": "Maecenas tristique est et tempus semper est quam pharetra magna ac consequat metus sapien ut",
+      "likes": 23,
+      "genre": "Thriller",
       "language": "English",
       "land": "India"
     },
 
     {
       "id": 4,
-      "movieName": "Sympathy for Mr. Vengeance",
+      "movieName": "Love Story",
       "image": "img/4.jpg",
-      "description": "vivamus vel nulla eget eros elementum pellentesque quisque",
-      "likes": 90,
-      "genre": "Crime|Drama",
-      "language": "english",
+      "description": "Turpis sed ante vivamus tortor duis mattis egestas metus aenean",
+      "likes": 15,
+      "genre": "Crime",
+      "language": "English",
       "land": "USA"
     },
 
     {
       "id": 5,
-      "movieName": "Black Plague",
+      "movieName": "One Night for Love",
       "image": "img/5.jpg",
-      "description": "curabitur convallis duis consequat dui nec nisi volutpat eleifend",
+      "description": "Libero quis orci nullam molestie nibh in lectus pellentesque at nulla",
       "likes": 10,
-      "genre": "Drama|Mystery|Thriller",
-      "language": "french",
+      "genre": "Mystery",
+      "language": "French",
       "land": "France"
     },
 
     {
       "id": 6,
-      "movieName": "Notti bianche, Le (White Nights)",
+      "movieName": "Love at first Sight",
       "image": "img/6.jpg",
-      "description": "lectus in quam fringilla rhoncus mauris",
-      "likes": 88,
-      "genre": "Drama|Romance",
-      "language": "italian",
+      "description": "Platea dictumst etiam faucibus cursus urna ut tellus nulla ut",
+      "likes": 6,
+      "genre": "Romance",
+      "language": "English",
       "land": "Italy"
+    },
+
+    {
+      "id": 7,
+      "movieName": "Magic Forest",
+      "image": "img/7.jpg",
+      "description": "Fusce congue diam id ornare imperdiet sapien urna pretium nisl ut volutpat sapien arcu sed augue",
+      "likes": 9,
+      "genre": "Drama",
+      "language": "Ukrainian",
+      "land": "Ukraine"
+    },
+
+    {
+      "id": 8,
+      "movieName": "Khight",
+      "image": "img/8.jpg",
+      "description": "Apede posuere nonummy integer non velit donec diam neque vestibulum eget vulputate ut ultrices vel",
+      "likes": 21,
+      "genre": "Thriller",
+      "language": "German",
+      "land": "Austria"
+    },
+
+    {
+      "id": 9,
+      "movieName": "Behind the Castle",
+      "image": "img/9.jpg",
+      "description": "Ut tellus nulla ut erat id mauris vulputate elementum nullam varius nulla facilisi cras",
+      "likes": 28,
+      "genre": "Crime",
+      "language": "Italian",
+      "land": "Italy"
+    },
+
+    {
+      "id": 10,
+      "movieName": "Chidi Eze",
+      "image": "img/10.jpg",
+      "description": "Posuere cubilia curae donec pharetra magna vestibulum aliquet ultrices erat tortor sollicitudin mi sit ame",
+      "likes": 9,
+      "genre": "Romance",
+      "language": "English",
+      "land": "USA"
+    },
+
+    {
+      "id": 11,
+      "movieName": "Tower",
+      "image": "img/11.jpg",
+      "description": "Interdum in ante vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae duis",
+      "likes": 18,
+      "genre": "Romance",
+      "language": "English",
+      "land": "USA"
+    },
+
+    {
+      "id": 12,
+      "movieName": "End of the Sea",
+      "image": "img/12.jpg",
+      "description": "In tempus sit amet sem fusce consequat nulla nisl nunc nisl",
+      "likes": 15,
+      "genre": "Mystery",
+      "language": "English",
+      "land": "USA"
+    },
+
+    {
+      "id": 13,
+      "movieName": "The Dance Story of Adeline",
+      "image": "img/13.jpg",
+      "description": "Congue vivamus metus arcu adipiscing molestie hendrerit at vulputate vitae nisl aenean",
+      "likes": 22,
+      "genre": "Drama",
+      "language": "French",
+      "land": "France"
+    },
+
+    {
+      "id": 14,
+      "movieName": "The Dark",
+      "image": "img/2.jpg",
+      "description": "Mauris laoreet ut rhoncus aliquet pulvinar sed nisl nunc rhoncus dui vel sem sed sagittis nam congue risus",
+      "likes": 10,
+      "genre": "Drama",
+      "language": "German",
+      "land": "Germany"
+    }, 
+
+    {
+      "id": 15,
+      "movieName": "Today is Mine",
+      "image": "img/15.jpg",
+      "description": "Posuere metus vitae ipsum aliquam non mauris morbi non lectus aliquam sit amet diam in magna",
+      "likes": 20,
+      "genre": "Drama",
+      "language": "English",
+      "land": "USA"
     }
   ]
 `

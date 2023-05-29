@@ -1,0 +1,58 @@
+@import "./variables.css";
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+a:hover {
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  padding: 10px 15px;
+}
+
+p {
+  font-size: 16px;
+  margin-bottom: 15px;
+  list-style: 1.14;
+}

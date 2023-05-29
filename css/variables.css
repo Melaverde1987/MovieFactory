@@ -1,0 +1,22 @@
+:root {
+  /* 
+  ================
+  COLORS 
+  ================
+  */
+  --yellow: #fbed2a;
+  --yellow-darker: #c8bd21;
+  --black-yellow: #191704;
+  --dark-yellow: #322f08;
+  --black: #000000;
+  --white: #ffffff;
+  --gray: #e4e4e4;
+
+  /* 
+  ==============
+  FONTS
+  ==============
+  */
+  --font-primary: Lucida Bright, serif;
+  --font-secondary: Century Gothic, serif;
+}

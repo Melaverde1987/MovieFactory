@@ -1,0 +1,212 @@
+@import "./reset.css";
+@import "./general.css";
+
+body {
+  font-family: var(--font-secondary);
+  background-color: var(--gray);
+  color: var(--black);
+}
+
+/* 
+==============
+HEADER
+==============
+ */
+
+header {
+  background-color: var(--black-yellow);
+  color: #fff;
+  text-align: center;
+  font-family: var(--font-primary);
+  font-size: 24px;
+}
+
+header .logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+header .icon {
+  fill: var(--white);
+}
+
+header .logo {
+  color: var(--white);
+  font-size: 34px;
+  display: inline-block;
+  padding: 20px 0;
+}
+
+header .navbar {
+  background-color: var(--yellow);
+  padding: 15px 0;
+}
+
+header .navbar-list {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+header .navbar-list--link {
+  font-family: var(--font-secondary);
+  font-size: 20px;
+}
+
+/*
+===================
+BUTTONS SECTION
+===================
+*/
+.buttons {
+  padding-bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.buttons .buttons-container {
+  display: flex;
+  gap: 10px 5px;
+  flex-wrap: wrap;
+}
+
+/*
+============
+CARDS
+============
+*/
+.cards .cards-list {
+  --card-gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--card-gap);
+}
+
+.cards .card-item {
+  flex-basis: calc((100% - var(--card-gap) * 2) / 3);
+  display: flex;
+  background-color: var(--white);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 1200px) {
+  .cards .card-item {
+    flex-basis: calc((100% - var(--card-gap)) / 2);
+  }
+}
+
+@media only screen and (max-width: 678px) {
+  .cards .card-item {
+    flex-basis: 100%;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .cards .card-item {
+    flex-direction: column;
+  }
+}
+
+.cards .card-image {
+  flex-basis: calc(100% / 2);
+  max-width: calc(100% / 2);
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 425px) {
+  .cards .card-image {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+.cards .card-image img {
+  transition: transform 1s ease-out;
+}
+
+@media only screen and (max-width: 425px) {
+  .cards .card-image img {
+    width: 100%;
+  }
+}
+
+.cards .card-image:hover img,
+.cards .card-image:focus img {
+  transform: scale(1.2);
+}
+
+.cards .card-text {
+  flex-basis: calc(100% / 2);
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cards .card-title {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.1;
+  margin-bottom: 25px;
+}
+
+.cards .card-land {
+  margin-bottom: auto;
+}
+
+.cards .card-like {
+  margin-bottom: 0;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 10px;
+}
+
+.cards .like-button {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  position: relative;
+}
+
+.cards .like-button .icon {
+  fill: var(--yellow);
+  transition: fill 0.3s ease-in;
+}
+
+.cards .like-button .icon.active {
+  animation: like 0.5s 1;
+  fill: var(--yellow-darker);
+}
+
+@-webkit-keyframes like {
+  0% {
+    transform: scale(1);
+  }
+  90% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+.cards .like-number {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+footer {
+  padding: 40px 0;
+  background-color: var(--dark-yellow);
+  color: var(--white);
+  text-align: center;
+}

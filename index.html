@@ -1,57 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="media.css">
-    <title>Code Review 4</title>
-</head>
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico" />
 
-<body>
-   <header>
-       <div>Movie Factory</div>
-   </header>
+    <title>Movie Factory</title>
+  </head>
 
-    <nav class="navbar navbar-expand-lg my-bg">
-        <div class="container">
-            <div class="navbar-collapse justify-content-center" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link text-dark" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" href="#">Best movies</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" href="#">Reviews</a>
-                    </li>
-                </ul>
-            </div>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo-container">
+          <svg class="icon" width="35" height="35">
+            <use href="./img/sprite.svg#cinema"></use>
+          </svg>
+          <a href="/" class="logo">Movie Factory</a>
         </div>
-    </nav>
+      </div>
 
-   <main>
-       <div class="container py-3">
-            <div class="sort mb-5">
-                <button id="sort" class="col-12 col-md-auto px-4 py-2 mb-2 mb-md-0 border-0 bg-dark text-white rounded-pill">Sort by rating</button>
-                <button id="sort2" class="col-12 col-md-auto px-4 py-2 border-0 bg-dark text-white rounded-pill">Random sorting</button>
-            </div>
+      <nav class="navbar">
+        <div class="container">
+          <ul class="navbar-list">
+            <li class="navbar-list--item">
+              <a class="navbar-list--link" href="#">Tickets</a>
+            </li>
+            <li class="navbar-list--item">
+              <a class="navbar-list--link" href="#">Reviews</a>
+            </li>
+            <li class="navbar-list--item">
+              <a class="navbar-list--link" href="#">About us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
-            <div class="row" id="row"></div>
-        <div class="row" id="row2"></div>
-       </div>
-   </main>
+    <main>
+      <div class="container">
+        <section class="buttons">
+          <div class="buttons-container">
+            <button type="button" id="sort-rating" class="btn">
+              Sort by rating
+            </button>
+            <button type="button" id="sort-title" class="btn">
+              Sort by title
+            </button>
+            <button type="button" id="sort-random" class="btn">
+              Random sorting
+            </button>
+          </div>
+          <div class="selection-container">
+            <label>
+              Sort by language
+              <select class="language" name="language" id="language">
+                <option value="All">All</option>
+              </select>
+            </label>
+          </div>
+        </section>
 
-   <footer>
-        <div>Movie Factory 2021</div>
-   </footer>
+        <section class="cards">
+          <ul class="cards-list" id="cards-list"></ul>
+          <!--
+          <ul class="cards-list" id="cards-list-rating"></ul>
+          -->
+        </section>
+      </div>
+    </main>
 
+    <footer>
+      <h2>&copy; Movie Factory 2021</h2>
+    </footer>
 
     <script src="data.json"></script>
-    <script type="text/javascript" src="script.js"></script>
-</body>
+    <script type="text/javascript" src="./js/script.js"></script>
+  </body>
+</html>
