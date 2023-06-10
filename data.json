@@ -1,4 +1,4 @@
-let movies = `
+const movies = `
   [
     {
       "id": 1,
@@ -165,4 +165,39 @@ let movies = `
       "land": "USA"
     }
   ]
-`
+`;
+
+const reviews = `
+  [
+    {
+      "id": 1,
+      "author": "Annie Kerrich",
+      "image": "img/1.jpg",
+      "text": "Vel lectus in quam fringilla rhoncus mauris enim leo rhoncus sed vestibulum sit amet cursus id turpis integer aliquet massa, dui proin leo odio porttitor id consequat in consequat ut nulla sed accumsan",
+      "date": "12.05.2022"
+    }, 
+
+    {
+      "id": 2,
+      "author": "Lee Denisard",
+      "image": "img/1.jpg",
+      "text": "Mauris nulla neque libero convallis eget eleifend luctus ultricies eu nibh quisque id justo sit amet sapien dignissim vestibulum.Tristique est et tempus semper est quam pharetra magna ac.",
+      "date": "12.05.2022"
+    },
+    {
+      "id": 3,
+      "author": "Alvinia Peatheyjohns",
+      "image": "img/9.jpg",
+      "text": "In hac habitasse platea dictumst aliquam augue quam sollicitudin vitae consectetuer eget rutrum at lorem integer tincidunt ante vel. Vestibulum sit amet cursus id turpis integer aliquet massa, dui proin leo odio porttitor id consequat in consequat ut nulla sed accumsan",
+      "date": "12.05.2022"
+    }, 
+
+    {
+      "id": 4,
+      "author": "The Dark",
+      "image": "img/11.jpg",
+      "text": "Pellentesque viverra pede ac diam cras pellentesque volutpat dui maecenas tristique est et tempus semper est quam pharetra magna ac, sapien dignissim vestibulum. Tristique est et tempus semper est quam pharetra magna ac.",
+      "date": "12.05.2022"
+    }
+  ]
+`;

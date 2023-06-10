@@ -47,40 +47,24 @@
 
     <main>
       <div class="container">
-        <section class="buttons">
-          <div class="buttons-container">
-            <button type="button" id="sort-rating" class="btn">
-              Sort by rating
-            </button>
-            <button type="button" id="sort-title" class="btn">
-              Sort by title
-            </button>
-            <button type="button" id="sort-random" class="btn">
-              Random sorting
-            </button>
-          </div>
-          <div class="selection-container">
-            <label>
-              Sort by genre
-              <select class="genre" name="genre" id="genre">
-                <option value="All">All</option>
-              </select>
-            </label>
+        <section class="about">
+          <p>
+            "Movie Factory" is a website with a list of films. Information about
+            the films is stored in a JSON file.
+          </p>
+          <p>
+            "Sort" buttons sort the list of films by their current rating, by
+            title or by random.
+          </p>
+          <p>
+            film has a "Like" button. Each time you click on it, the rating of
+            the film increases. The rating is updated on the screen after
+            clicking the "Like" button.
+          </p>
 
-            <label>
-              Sort by language
-              <select class="language" name="language" id="language">
-                <option value="All">All</option>
-              </select>
-            </label>
-          </div>
-        </section>
-
-        <section class="cards">
-          <ul class="cards-list" id="cards-list"></ul>
-          <!--
-          <ul class="cards-list" id="cards-list-rating"></ul>
-          -->
+          <svg class="icon" width="400" height="400">
+            <use href="./img/sprite.svg#cinema-icon"></use>
+          </svg>
         </section>
       </div>
     </main>
@@ -88,8 +72,5 @@
     <footer>
       <h2>&copy; Movie Factory 2021</h2>
     </footer>
-
-    <script src="./data.json"></script>
-    <script src="./js/script.js"></script>
   </body>
 </html>

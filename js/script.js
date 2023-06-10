@@ -158,6 +158,61 @@ function sortByLanguage(language) {
   });
 }
 
+function sortByGenre(genre) {
+  document.getElementById("cards-list").innerHTML = ``;
+
+  movie.forEach((value) => {
+    if (value.genre === genre) {
+      document.getElementById("cards-list").innerHTML += `
+        <li class="card-item">
+            <div class="card-image">
+                <img src="${value.image}" alt="">
+            </div>
+            <div class="card-text">
+                <h2 class="card-title">${value.movieName}</h2>
+                <p class="card-description">${value.description}</p>
+                <p class="card-genre">Genre: ${value.genre}</p>
+                <p class="card-language">Language: ${value.language}</p>
+                <p class="card-land">Land: ${value.land}</p>
+                <p class="card-like">
+                    <button type="button" class="like-button">
+                        <svg class="icon" width="40" height="33">
+                            <use href="./img/sprite.svg#like"></use>
+                        </svg>
+                    </button>
+                    <span id="like" class="like-number">${value.likes}</span>
+                </p>
+            </div>
+        </li>   
+    `;
+    }
+    if (genre === "All") {
+      document.getElementById("cards-list").innerHTML += `
+        <li class="card-item">
+            <div class="card-image">
+                <img src="${value.image}" alt="">
+            </div>
+            <div class="card-text">
+                <h2 class="card-title">${value.movieName}</h2>
+                <p class="card-description">${value.description}</p>
+                <p class="card-genre">Genre: ${value.genre}</p>
+                <p class="card-language">Language: ${value.language}</p>
+                <p class="card-land">Land: ${value.land}</p>
+                <p class="card-like">
+                    <button type="button" class="like-button">
+                        <svg class="icon" width="40" height="33">
+                            <use href="./img/sprite.svg#like"></use>
+                        </svg>
+                    </button>
+                    <span id="like" class="like-number">${value.likes}</span>
+                </p>
+            </div>
+        </li>   
+    `;
+    }
+  });
+}
+
 function randomOrder() {
   function getRandomInt(max) {
     return Math.floor(Math.random() * Math.floor(max));
@@ -235,9 +290,9 @@ for (let i = 0; i < movie.length; i++) {
 }
 
 /*
-===============
-Select Options
-===============
+=========================
+Select Options language
+=========================
 */
 
 var languages = [];
@@ -256,6 +311,31 @@ console.log(languages);
 for (let i = 0; i < languages.length; i++) {
   document.getElementById("language").innerHTML += `
         <option value="${languages[i]}">${languages[i]}</option>  
+    `;
+}
+
+/*
+=====================
+Select Options Genre
+=====================
+*/
+
+var genres = [];
+
+for (let i = 0; i < movie.length; i++) {
+  var genre = movie[i].genre;
+
+  if (genres.includes(genre)) {
+  } else {
+    genres.push(genre);
+  }
+}
+
+console.log(genres);
+
+for (let i = 0; i < genres.length; i++) {
+  document.getElementById("genre").innerHTML += `
+        <option value="${genres[i]}">${genres[i]}</option>  
     `;
 }
 
@@ -303,4 +383,15 @@ const selectLanguage = document.querySelector(".language");
 
 selectLanguage.addEventListener("change", (event) => {
   sortByLanguage(event.target.value), false;
+});
+
+/*
+==========================
+Buttons Select by Genre
+==========================
+*/
+const selectGenre = document.querySelector(".genre");
+
+selectGenre.addEventListener("change", (event) => {
+  sortByGenre(event.target.value), false;
 });

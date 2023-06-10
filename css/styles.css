@@ -22,14 +22,7 @@ header {
 }
 
 header .logo-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-}
-
-header .icon {
-  fill: var(--white);
+  display: inline-block;
 }
 
 header .logo {
@@ -37,6 +30,20 @@ header .logo {
   font-size: 34px;
   display: inline-block;
   padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: opacity 0.7s ease-in;
+}
+
+header .logo:hover,
+header .logo:focus {
+  opacity: 0.7;
+}
+
+header .icon {
+  fill: var(--white);
 }
 
 header .navbar {
@@ -56,6 +63,14 @@ header .navbar-list {
 header .navbar-list--link {
   font-family: var(--font-secondary);
   font-size: 20px;
+  display: inline-block;
+  font-weight: 600;
+  transition: transform 0.3s ease;
+}
+
+header .navbar-list--link:hover {
+  color: var(--black);
+  transform: translateY(-1px);
 }
 
 /*
@@ -69,12 +84,20 @@ BUTTONS SECTION
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  row-gap: 30px;
 }
 
 .buttons .buttons-container {
   display: flex;
   gap: 10px 5px;
   flex-wrap: wrap;
+}
+
+.buttons .selection-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 /*
@@ -157,6 +180,14 @@ CARDS
   margin-bottom: 25px;
 }
 
+.cards .card-description {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
 .cards .card-land {
   margin-bottom: auto;
 }
@@ -202,6 +233,21 @@ CARDS
 .cards .like-number {
   font-size: 22px;
   font-weight: 700;
+}
+
+/*
+================
+ABOUT SECTION
+================
+*/
+.about {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 120px 0;
+}
+
+.about p {
+  line-height: 1.5;
 }
 
 footer {
